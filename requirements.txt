@@ -8,4 +8,3 @@ pillow
 werkzeug
 python-dotenv
 gunicorn
-tesseract-ocr
