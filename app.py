@@ -659,9 +659,10 @@ def get_supported_formats():
 if __name__ == '__main__':
     if not Config.GROQ_API_KEY:
         print("⚠️ WARNING: GROQ_API_KEY not found in environment variables")
-    
+
+    # Run Flask app with port 10000 (required by Render Docker)
     app.run(
-        debug=False,
+        debug=os.getenv("FLASK_DEBUG", "False").lower() == "true",
         host='0.0.0.0',
-        port=int(os.environ.get('PORT', 5001))
+        port=int(os.getenv("PORT", 10000))
     )
