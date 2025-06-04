@@ -4,7 +4,7 @@ services:
     name: student-doc-analyzer
     runtime: python
     python:
-      version: "3.9.13"
+      version: "3"
     buildCommand: |
       pip install -r requirements.txt
       sudo apt-get update
@@ -22,9 +22,3 @@ services:
       - oregon
     healthCheckPath: /health
     autoDeploy: true
-
-# Database could be added like this (optional):
-# databases:
-#   - name: doc_analysis_db
-#     plan: free
-#     region: oregon
