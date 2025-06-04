@@ -1,0 +1,9 @@
+flask
+flask-cors
+requests
+PyPDF2
+python-docx
+pytesseract
+pillow
+werkzeug
+python-dotenv
