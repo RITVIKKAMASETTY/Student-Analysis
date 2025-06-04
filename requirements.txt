@@ -7,3 +7,4 @@ pytesseract
 pillow
 werkzeug
 python-dotenv
+gunicorn
