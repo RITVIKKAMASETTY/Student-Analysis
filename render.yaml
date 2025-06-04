@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: your-app-name     
+    env: docker
+    branch: main             
+    dockerfilePath: ./Dockerfile
+    plan: free                
+    region: oregon           
+    autoDeploy: true
+    envVars:                  
+      - key: SOME_ENV_VAR
+        value: some_value
